@@ -18,7 +18,7 @@ def browser(web_config):
 
 @pytest.fixture(scope="session")
 def winapp_config():
-    with open("config/windows_config.yaml") as f:
+    with open("config/win_config.yaml") as f:
         return yaml.safe_load(f)
 
 @pytest.fixture(scope="function")
@@ -28,6 +28,6 @@ def win_driver(winapp_config):
         "deviceName": "WindowsPC",
         "app": winapp_config["app_path"]
     }
-    driver = windriver.Remote("http://127.0.0.1:4723", desired_caps)
+    driver = windriver.Remote("http://127.0.0.1:4727", desired_caps)
     yield driver
     driver.quit()
