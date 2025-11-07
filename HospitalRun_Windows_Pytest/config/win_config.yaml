@@ -1,0 +1,15 @@
+# Windows application automation configuration for pytest + appium
+
+app_path: "D:\\HospitalRun-win32-ia32\\HospitalRun.exe"
+platformName: "Windows"
+deviceName: "WindowsPC"
+
+timeouts:
+  implicit_wait: 10 # seconds
+  app_launch: 30 # seconds
+
+screenshot_path: "reports/screenshots"
+
+logging:
+  level: "INFO"
+  log_file: "logs/windows_test.log"

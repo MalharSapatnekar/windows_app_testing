@@ -1,0 +1,17 @@
+# Web automation configuration for pytest + selenium
+
+base_url: "https://www.amazon.in"
+browser: "chrome"
+
+timeouts:
+  implicit_wait: 10 # seconds
+  page_load: 30 # seconds
+
+screenshot_path: "reports/screenshots"
+
+headless: false # set to true for CI runs
+window_size: "1920,1080"
+
+logging:
+  level: "INFO"
+  log_file: "logs/web_test.log"
