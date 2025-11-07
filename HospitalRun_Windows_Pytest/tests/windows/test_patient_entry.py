@@ -8,7 +8,8 @@ def wait_for_element(driver, by, value, timeout=10):
         lambda d: d.find_element(by, value)
     )
 
-@pytest.mark.TC_1011
+# @pytest.mark.sm
+# @pytest.mark.metadata(requirement='REQ_1', testcase_id='TP001_TC001')
 def test_patient_entry(win_driver):
 
 	try:
