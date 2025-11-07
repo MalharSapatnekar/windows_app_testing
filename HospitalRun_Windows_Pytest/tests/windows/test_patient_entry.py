@@ -9,7 +9,7 @@ def wait_for_element(driver, by, value, timeout=10):
     )
 
 # @pytest.mark.sm
-# @pytest.mark.metadata(requirement='REQ_1', testcase_id='TP001_TC001')
+# @pytest.mark.metadata(requirement='REQ_1', testcase_id='TC_001')
 def test_patient_entry(win_driver):
 
 	try:
