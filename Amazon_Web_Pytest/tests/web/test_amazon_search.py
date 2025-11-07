@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 
+@pytest.mark.metadata(testcase_id='TC_AMAZON_2108')
 def test_search_product(browser):
     # Step 1: Launch Amazon.in
     browser.get("https://www.amazon.in/")
